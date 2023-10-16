@@ -11,6 +11,7 @@ public class MainWindow extends  JFrame {
         frame = this;
         this.setTitle("*Untitled");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/icon.png")));
         this.setSize(800, 700);
         this.setVisible(true);
         this.setLayout(null);
