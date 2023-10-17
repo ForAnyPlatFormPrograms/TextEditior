@@ -1,6 +1,5 @@
 
 import javax.swing.*;
-import javax.swing.colorchooser.AbstractColorChooserPanel;
 import javax.swing.event.UndoableEditEvent;
 import javax.swing.event.UndoableEditListener;
 import javax.swing.undo.CannotUndoException;
@@ -46,6 +45,7 @@ public class KeyBindings {
              @Override
              public void actionPerformed(ActionEvent actionEvent) {
                      SizeWindow sizeWindow = new SizeWindow();
+                     sizeWindow.textField.setText("Size: "+String.valueOf(menuShortcut.interFace.jTextArea.getFont().getSize()));
                      sizeWindow.list.addKeyListener(new KeyAdapter() {
                          @Override
                          public void keyPressed(KeyEvent e) {
