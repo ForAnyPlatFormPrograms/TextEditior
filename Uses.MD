@@ -1,1 +1,1 @@
-Just run the ./run file in mainprogram1.0
+Just run the exe file and intall it
